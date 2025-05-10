@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="800" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#F5F5F5" />
+  
+  <!-- Subtle pattern background -->
+  <pattern id="subtle-pattern" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="20" height="20" fill="#F5F5F5" />
+    <circle cx="10" cy="10" r="1" fill="#E0E0E0" />
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#subtle-pattern)" />
+  
+  <!-- Silhouette of a person -->
+  <g transform="translate(300, 400)">
+    <!-- Head -->
+    <circle cx="0" cy="-150" r="90" fill="#A1887F" />
+    
+    <!-- Face Details (minimalistic) -->
+    <ellipse cx="-30" cy="-160" rx="10" ry="5" fill="#5D4037" /> <!-- Left eye -->
+    <ellipse cx="30" cy="-160" rx="10" ry="5" fill="#5D4037" /> <!-- Right eye -->
+    <path d="M-20,-120 C0,-110 20,-110 40,-120" fill="none" stroke="#5D4037" stroke-width="3" /> <!-- Smile -->
+    
+    <!-- Hair -->
+    <path d="M-90,-200 C-100,-180 -90,-140 -80,-120 C-90,-140 -100,-180 -90,-200 Z" fill="#3E2723" /> <!-- Left side -->
+    <path d="M90,-200 C100,-180 90,-140 80,-120 C90,-140 100,-180 90,-200 Z" fill="#3E2723" /> <!-- Right side -->
+    <path d="M-90,-200 C-70,-230 -30,-240 0,-240 C30,-240 70,-230 90,-200 C60,-220 30,-230 0,-230 C-30,-230 -60,-220 -90,-200 Z" fill="#3E2723" /> <!-- Top -->
+    
+    <!-- Casual modern attire -->
+    <rect x="-100" y="-50" width="200" height="200" rx="10" fill="#2196F3" /> <!-- Blue shirt/jacket -->
+    
+    <!-- Small modern Moroccan-inspired pattern -->
+    <pattern id="modern-pattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="none" />
+      <path d="M0,0 L10,10 M10,0 L0,10" stroke="#BBDEFB" stroke-width="0.5" />
+    </pattern>
+    <rect x="-90" y="-40" width="180" height="180" fill="url(#modern-pattern)" opacity="0.3" />
+    
+    <!-- Collar -->
+    <path d="M-30,-60 L0,-90 L30,-60" fill="none" stroke="#FFFFFF" stroke-width="5" />
+    
+    <!-- Necktie with subtle traditional pattern -->
+    <path d="M0,-60 L-15,-20 L0,40 L15,-20 Z" fill="#673AB7" />
+    <pattern id="tie-pattern" width="5" height="5" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="none" />
+      <circle cx="2.5" cy="2.5" r="1" fill="#D1C4E9" />
+    </pattern>
+    <path d="M0,-60 L-15,-20 L0,40 L15,-20 Z" fill="url(#tie-pattern)" opacity="0.3" />
+    
+    <!-- Neck -->
+    <rect x="-30" y="-60" width="60" height="30" fill="#BCAAA4" />
+    
+    <!-- Small decorative pin with Moroccan motif -->
+    <circle cx="-50" cy="0" r="8" fill="#FFC107" />
+    <path d="M-54,-4 L-46,4 M-54,4 L-46,-4" stroke="#FFFFFF" stroke-width="1" />
+  </g>
+  
+  <!-- Decorative border with modern twist -->
+  <rect x="20" y="20" width="560" height="760" fill="none" stroke="#2196F3" stroke-width="2" rx="15" />
+  <rect x="30" y="30" width="540" height="740" fill="none" stroke="#FFC107" stroke-width="1" rx="10" stroke-dasharray="5,5" />
+</svg> 

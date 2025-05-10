@@ -1,0 +1,17 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9f3eb"/>
+  <!-- Lantern Base -->
+  <path d="M150 280 L250 280 L240 160 L160 160 Z" fill="#8A6642" stroke="#3A2D20" stroke-width="3"/>
+  <!-- Lantern Top -->
+  <path d="M160 160 L240 160 L230 120 L170 120 Z" fill="#C27D2B" stroke="#3A2D20" stroke-width="3"/>
+  <!-- Lantern Dome -->
+  <path d="M170 120 L230 120 Q 200 90 170 120" fill="#C27D2B" stroke="#3A2D20" stroke-width="3"/>
+  <!-- Colored Glass Panels -->
+  <rect x="170" y="180" width="20" height="30" fill="#E6B17E" stroke="#3A2D20" stroke-width="1"/>
+  <rect x="210" y="180" width="20" height="30" fill="#4CAF50" stroke="#3A2D20" stroke-width="1"/>
+  <rect x="170" y="230" width="20" height="30" fill="#5D94FB" stroke="#3A2D20" stroke-width="1"/>
+  <rect x="210" y="230" width="20" height="30" fill="#E91E63" stroke="#3A2D20" stroke-width="1"/>
+  <!-- Lantern Chain -->
+  <path d="M200 90 L200 50" stroke="#3A2D20" stroke-width="2" fill="none"/>
+  <text x="50%" y="340" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="24" fill="#3A2D20">Moroccan Lantern</text>
+</svg> 

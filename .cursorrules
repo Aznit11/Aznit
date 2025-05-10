@@ -1,0 +1,120 @@
+# AzniT Project Rules and Patterns
+
+## Project Intelligence
+
+### Directory Structure
+- Pages live in `app/` directory, following Next.js App Router conventions
+- Reusable components are in the `components/` directory
+- Data and utility functions are in the `lib/` directory
+- Contexts for state management are in the `contexts/` directory
+- Type definitions are in the `types/` directory
+- Database schema and client are in the `prisma/` directory
+
+### Component Patterns
+- Page components use "use client" directive at the top
+- Components have appropriate TypeScript interfaces for props
+- Navbar and footer components are included in the root layout only
+- Products use the ProductCard component for display in listings
+- Do not use the old Layout component wrapper in page components
+
+### Layout Structure
+- Root layout (app/layout.tsx) provides the application shell with:
+  - Navbar at the top
+  - Main content area
+  - Footer at the bottom
+- Page components should return their content directly without wrappers
+- Authentication, cart, wishlist, chat, and payment providers wrap the entire application in the root layout
+
+### Styling Patterns
+- Use Tailwind CSS for all styling
+- Follow the established color scheme:
+  - Primary: #C27D2B (Moroccan amber)
+  - Secondary: #8A6642 (Terracotta brown)
+  - Accent: #E6B17E (Light amber)
+  - Dark: #3A2D20 (Deep brown)
+  - Light: #F9F3EB (Cream/off-white)
+- Use serif fonts (Playfair Display) for headings
+- Use sans-serif fonts (Inter) for body text
+- Container class "container-custom" for page width constraints
+
+### State Management
+- Use React Context API for global state like cart, wishlist, chat
+- Create custom hooks for consuming context (e.g., useCart, useWishlist, useChat)
+- Use localStorage for persistence of cart and wishlist items
+- Chat state is maintained during the session
+- Form state is managed with useState hooks
+
+### Authentication
+- NextAuth.js provides authentication functionality
+- Protected routes are managed via middleware
+- User roles (admin vs regular user) control access to features
+- Authentication state is accessible via useSession hook
+
+### Data Fetching
+- Using static data in lib/data.ts for product catalog
+- Database access via Prisma client for users and orders
+- API routes in app/api for server operations
+
+### User Interaction
+- Use controlled components for forms
+- Implement client-side validation for forms
+- Show validation errors inline with form fields
+- Provide clear user feedback for actions
+- Wishlist toggle buttons provide immediate visual feedback
+- Chat widget is accessible from all pages with a floating button
+
+### Image Handling
+- Use Next.js Image component for optimized images
+- SVG images are used for products and stored in public/images/
+
+### Naming Conventions
+- PascalCase for component file names and React components
+- camelCase for variables, functions, and custom hooks
+- kebab-case for CSS class names
+- All page components are named "page.tsx"
+- All layout components are named "layout.tsx"
+
+### TypeScript Patterns
+- Define interfaces for all component props
+- Export and reuse type definitions from types directory
+- Use proper type annotations for functions and variables
+
+### Best Practices
+- Keep components focused on a single responsibility
+- Avoid prop drilling by using context where appropriate
+- Implement responsive design for all components
+- Optimize expensive calculations with useMemo
+- Use useCallback for function references in props 
+
+## Review System Guidelines
+1. All review submissions must be from authenticated users only
+2. New reviews start with isApproved=false and require admin approval
+3. Ratings must be integer values between 1 and 5
+4. Review comments are optional but rating is required
+5. Review forms should provide clear feedback on submission status
+6. Product pages should show average ratings and total review count
+7. Admin review moderation should allow approving, rejecting, and deleting reviews
+8. Reviews displayed on product pages should be sorted with newest first
+9. Approved reviews should be displayed on product detail pages
+10. Admin dashboard should have quick access to pending reviews
+
+## Wishlist System Guidelines
+1. Any product can be added to the wishlist with a single click
+2. Wishlist state is persisted in localStorage for guest users
+3. Products in the wishlist display a filled heart icon, and empty heart when not in wishlist
+4. Clicking the wishlist icon toggles the item's status in the wishlist
+5. The wishlist page should provide options to add items directly to cart
+6. Wishlist counts should be displayed in the navigation for quick access
+7. Products can be removed from the wishlist page with a single click
+8. Wishlist items remain even after the product is added to cart
+
+## Chat System Guidelines
+1. Chat widget should be accessible via a floating button in the bottom right corner
+2. Chat can be minimized while browsing without losing conversation history
+3. Chat messages should show clear sender information (user vs support)
+4. Chat input should prevent empty message submission
+5. Chat state should persist within the same browsing session
+6. Chat widget should not block important UI elements
+7. Admin interface should provide access to all active chat sessions
+8. Messages should display timestamps for reference
+9. Chat interface should provide visual indicators for unread messages 

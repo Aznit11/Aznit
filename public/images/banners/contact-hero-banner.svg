@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient representing Moroccan cityscape -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E88E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="pattern-overlay" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0,15 L30,15 M15,0 L15,30" stroke="#90CAF9" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  <rect width="100%" height="100%" fill="url(#pattern-overlay)" />
+  
+  <!-- Stylized cityscape silhouette -->
+  <path d="M0,600 L50,600 L50,550 L100,550 L100,570 L150,570 L150,520 L200,520 L200,580 L250,580 L250,500 L300,500 L300,450 L350,450 L350,550 L400,550 L400,500 L450,500 L450,550 L500,550 L500,580 L550,580 L550,500 L600,500 L600,600 L650,600 L650,550 L700,550 L700,500 L750,500 L750,470 L800,470 L800,550 L850,550 L850,520 L900,520 L900,580 L950,580 L950,500 L1000,500 L1000,600 L1050,600 L1050,550 L1100,550 L1100,500 L1150,500 L1150,530 L1200,530 L1200,480 L1250,480 L1250,520 L1300,520 L1300,570 L1350,570 L1350,500 L1400,500 L1400,450 L1450,450 L1450,520 L1500,520 L1500,580 L1550,580 L1550,530 L1600,530 L1600,580 L1650,580 L1650,520 L1700,520 L1700,600 L1750,600 L1750,550 L1800,550 L1800,520 L1850,520 L1850,570 L1900,570 L1900,600 L1920,600 L1920,1080 L0,1080 Z" fill="#01579B" opacity="0.8" />
+  
+  <!-- Stylized Moroccan buildings -->
+  <path d="M400,650 L400,800 L550,800 L550,650 Z" fill="#01579B" />
+  <path d="M420,680 L450,680 L450,720 L420,720 Z" fill="#90CAF9" />
+  <path d="M480,680 L510,680 L510,720 L480,720 Z" fill="#90CAF9" />
+  <path d="M420,740 L450,740 L450,780 L420,780 Z" fill="#90CAF9" />
+  <path d="M480,740 L510,740 L510,780 L480,780 Z" fill="#90CAF9" />
+  
+  <path d="M600,700 L600,850 L750,850 L750,700 Z" fill="#01579B" />
+  <path d="M620,730 L650,730 L650,770 L620,770 Z" fill="#90CAF9" />
+  <path d="M680,730 L710,730 L710,770 L680,770 Z" fill="#90CAF9" />
+  <path d="M620,790 L650,790 L650,830 L620,830 Z" fill="#90CAF9" />
+  <path d="M680,790 L710,790 L710,830 L680,830 Z" fill="#90CAF9" />
+  
+  <!-- Stylized Moroccan archway -->
+  <path d="M1200,600 L1200,800 L1400,800 L1400,600 L1380,600 Q1300,500 1220,600 Z" fill="#01579B" />
+  <path d="M1270,700 Q1270,750 1300,750 Q1330,750 1330,700 L1330,680 L1270,680 Z" fill="none" stroke="#FBC02D" stroke-width="5" />
+  
+  <!-- Stylized Moroccan domes -->
+  <path d="M900,650 Q900,600 950,600 Q1000,600 1000,650 Q1000,700 950,700 Q900,700 900,650 Z" fill="#01579B" />
+  <circle cx="950" cy="620" r="10" fill="#FBC02D" />
+  
+  <path d="M1500,630 Q1500,580 1550,580 Q1600,580 1600,630 Q1600,680 1550,680 Q1500,680 1500,630 Z" fill="#01579B" />
+  <circle cx="1550" cy="600" r="10" fill="#FBC02D" />
+  
+  <!-- Decorative elements -->
+  <circle cx="1300" cy="550" r="30" fill="none" stroke="#FBC02D" stroke-width="2" opacity="0.7" />
+  <circle cx="1300" cy="550" r="20" fill="none" stroke="#FBC02D" stroke-width="1" opacity="0.7" />
+</svg> 

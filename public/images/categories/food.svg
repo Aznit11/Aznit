@@ -1,0 +1,29 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9f3eb"/>
+  <!-- Background Pattern -->
+  <rect width="100%" height="100%" fill="rgba(194, 125, 43, 0.1)"/>
+  
+  <!-- Spice Jars -->
+  <rect x="80" y="130" width="50" height="100" rx="5" ry="5" fill="#FFD700" stroke="#8A6642" stroke-width="2"/>
+  <rect x="150" y="160" width="50" height="70" rx="5" ry="5" fill="#FF5722" stroke="#8A6642" stroke-width="2"/>
+  <rect x="220" y="130" width="50" height="100" rx="5" ry="5" fill="#8B4513" stroke="#8A6642" stroke-width="2"/>
+  <rect x="290" y="160" width="50" height="70" rx="5" ry="5" fill="#E91E63" stroke="#8A6642" stroke-width="2"/>
+  
+  <!-- Jar Lids -->
+  <rect x="85" y="120" width="40" height="10" rx="2" ry="2" fill="#8A6642"/>
+  <rect x="155" y="150" width="40" height="10" rx="2" ry="2" fill="#8A6642"/>
+  <rect x="225" y="120" width="40" height="10" rx="2" ry="2" fill="#8A6642"/>
+  <rect x="295" y="150" width="40" height="10" rx="2" ry="2" fill="#8A6642"/>
+  
+  <!-- Spice Heaps -->
+  <ellipse cx="100" cy="280" rx="30" ry="15" fill="#FFD700"/>
+  <ellipse cx="180" cy="280" rx="30" ry="15" fill="#FF5722"/>
+  <ellipse cx="260" cy="280" rx="30" ry="15" fill="#8B4513"/>
+  <ellipse cx="340" cy="280" rx="30" ry="15" fill="#E91E63"/>
+  
+  <!-- Bowl -->
+  <ellipse cx="200" cy="320" rx="80" ry="30" fill="#C27D2B" stroke="#8A6642" stroke-width="3"/>
+  <ellipse cx="200" cy="320" rx="70" ry="20" fill="#E6B17E" stroke="#8A6642" stroke-width="1"/>
+  
+  <text x="50%" y="375" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#3A2D20">Food & Spices</text>
+</svg> 
